@@ -1,0 +1,16 @@
+n = int(input("Enter the number: "))
+x = n 
+rev = 0
+
+if n > 0:
+    while x != 0:        
+        rem = x % 10
+        rev = (rev * 10) + rem
+        x = x // 10      
+    
+    if n == rev:
+        print("The given number is palindrome")
+    else:
+        print("The given number is Not a palindrome")
+else:
+    print("Please enter a positive number")
