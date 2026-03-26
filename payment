@@ -1,0 +1,7 @@
+n=int(input("Enter the age of patiens"))
+if n>0 and n<17:
+    print("You pay 200 INR")
+elif n>=17 and n<40:
+    print("You pay 400 INR")
+else:
+    print("You pay 300 INR")
