@@ -1,0 +1,19 @@
+no_in_wall=int(input("Number of interior walls:"))
+no_out_wall=int(input("Number of exterior walls "))
+interior=18
+exterior=12
+tot1=0
+tot2=0
+if no_in_wall==0 and no_out_wall==0:
+    print("No need to paint.")
+if no_in_wall>0:
+    for i in range(no_in_wall):
+        s1=int(input(f"Enter the surface area of interior wall: {i+1}"))
+        tot1+=s1
+if no_out_wall>0:
+    for i in range(no_out_wall):
+        s2=int(input(f"Enter the surface area of exterior wall: {i+1}"))
+        tot2+=s1
+totcost=(tot1*18)+(tot2*12)
+print("The total cost of painting",totcost)
+        
